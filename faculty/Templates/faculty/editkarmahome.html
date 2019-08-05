@@ -1,0 +1,13 @@
+{% extends 'faculty/base.html' %}
+{% block body %}
+    {% if object_list %}
+        <p><h1><strong>Choose Course for Editing Karma Points:</strong></h1></p>
+        <ol>
+            {% for i in object_list %}
+                <li><h4><a href="/faculty/edit_karma/{{ i.id }}/"> {{ i.cname }}</a></h4></li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <h3>You dont have any courses</h3>
+    {% endif %}
+{% endblock %}

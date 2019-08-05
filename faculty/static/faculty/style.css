@@ -1,0 +1,53 @@
+body{
+    background:ghostwhite url("images/GMRLOGO.jpg");
+    background-position:200px 200px;
+    background-repeat:no-repeat;
+    background-size:1000px;
+}
+h2 {
+            color:#194992;
+            text-align:center;
+            padding-top:10px;
+            }
+a{
+            font-size:40px;
+            font-weight:100;
+            color:#084995;
+            top: 300px;
+       }
+h2 {
+            color:blue;
+            text-align:center;
+            padding-top:10px;
+            }
+h1 {
+            text-align:left;
+            padding-top:250px;
+            }
+table{
+           border:3px solid;
+           background-color:antiquewhite;
+           border-collapse: collapse;
+           width : 200%;
+           height : 150%;
+       }
+       td{
+           font-family: Arial;
+           font-size: 30px;
+           border-style: solid;
+
+       }
+       th{
+           border-collapse: collapse;
+           font-size: 30px;
+       }
+.navbar{
+            size: legal;
+            border-radius: 0px;
+
+    }
+    .navbar-brand{
+        font-family: "Al Nile";
+
+    }
+    navbar-dark bg-dark

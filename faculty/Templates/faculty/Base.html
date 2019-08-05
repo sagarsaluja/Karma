@@ -1,0 +1,55 @@
+<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+      </style>
+    <title>GMRVF || Home</title>
+</head>
+
+<body style = "background-color: ghostwhite">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <div class="navbar-header">
+             <a href="http://www.gmrvfskilling.com" class="navbar-brand">GMRVF</a>
+         </div>
+            <!-- MENU ITEMS-->
+         <div>
+             <ul class="nav navbar-nav">
+                <li> <a href="{% url 'faculty:index' %}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                 <li> <a href="{% url 'faculty:detail' %}"><span class="glyphicon glyphicon-education"></span> Full Student Data</a></li>
+                 <li><a href="{% url 'faculty:student-add' %}"> <span class="glyphicon glyphicon-plus"></span> Add Student</a></li>
+                 <li> <a href="{% url 'faculty:edit-home' %}"><span class="glyphicon glyphicon-edit"></span> Edit Karma</a></li>
+                 <li>
+                     <a href="#" class="dropdown-toggle" data-toggle= "dropdown">Quick Links <span class="glyphicon glyphicon-menu-down"></span></a>
+                     <ul class = "dropdown-menu">
+                          <li> <a href="admin/">Admin</a></li>
+                          <li> <a href="user_manual.html">User Manual</a></li>
+                     </ul>
+                 </li>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <ul class="nav navbar-nav navbar-right">
+                 <li><a href ="{% url 'faculty:logout' %}">Logout <span class="glyphicon glyphicon-off"></span> </a></li>
+                 </ul>
+             </ul>
+         </div>
+
+      </div>
+
+   </nav>
+{% block body %}
+
+{% endblock %}
+</body>
+</html>
+

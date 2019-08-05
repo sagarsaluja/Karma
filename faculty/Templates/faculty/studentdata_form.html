@@ -1,0 +1,19 @@
+{% extends 'faculty/base.html' %}
+{% block body %}
+    <title> Add Student</title>
+    <h1><b>Please fill in the details </b></h1>
+    <form action="" method="post" enctype="multipart/form-data" >
+        {% csrf_token %}
+        {% include 'faculty/form-template.html' %}
+        <button type="submit" class="btn btn-success" onclick="my_button_click_handler()">SUBMIT</button>
+
+            <script>
+                function my_button_click_handler()
+                    {
+                        alert('Response Recorded!');
+                    }
+            </script>
+    </form>
+{% endblock %}
+
+

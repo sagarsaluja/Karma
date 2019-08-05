@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Manual</title>
+
+</head>
+{% block body %}
+<body>
+
+1.Introduction
+This website is basically to award points to students based on the extra-curricular activities. We have chosen 8 activities with 25 points each.
+Each student has been awarded 200 points initially. Based on his/her irregular behaviour and poor performance in the particular activity, student can lose marks in the upcoming evaluation.
+Benefits from this website are that it will create a competitive environment among the students and in turn they will start developing good habits, faculty can have grip over students as at the end of term student with maximum karma can be sent to interviews first.
+
+2.Working and Functionalities
+2.1. Login:
+       To access the website contents user must be logged in first using the username and password provided.
+       The login will look like this.
+
+After filling out the credentials please hit the submit button.
+Continue reading to Homepage 2.2.
+
+2.2 Admin Login:
+Admin can Login through admin login through which he can add courses, can delete the courses, can add or remove users.
+ 2.2.1 How to add student data in bulk:
+•	Go to Quick links, choose Admin
+•	Logon to the admin login page
+•	Under Facility, choose studentdatas
+•	Click on the import button on the top left
+•	Choose file to import
+•	Choose the format to csv
+•	Click on the submit button
+•	If there are no errors in the file, you will be able to see the Preview
+•	Press confirm import
+•	Data is now imported.
+
+File format of the csv file:
+
+
+
+•	Make a data-file in excel exactly like this.
+•	The first row should be exactly like this
+•	Export this excel file as .csv type
+•	Now you can import it through admin panel
+•	Be careful with the id field
+<pre>
+<p style="color: red">
+Once you have entered the data, for the next data entry, make sure the first id number should continue after where the previous Id number ended.
+For example, if in the above picture, last recorded id number was 14, so in the next file to be uploaded, the id number should start from 15.
+</p>
+</pre>
+You can accidentally delete previously entered data if this is not followed.
+How to specify course?
+Each course has been assigned a number, enter that number to assign that course to the student.
+The numbers are shown here.
+1.	what?
+2.	TwoWheeler Technician
+3.	Excavator Operator
+4.	Electrician
+5.	Drywall and False Ceiling Technician
+6.	Solar Technician
+7.	AC Technician
+8.	Computer Operator
+9.	Sewing Machine Operator
+10.	Welder
+11.	Hotel Management (F&B)
+12.	Plumbing Technician
+
+
+
+ 2.2.2
+How to delete student data in bulk:
+•	Go to Quick links, choose Admin
+•	Logon to the admin login page
+•	Under faculty, choose studentdatas
+•	Choose the course for which you want to delete data
+•	For deleting all students, choose the checkbox left to student data
+•	Choose delete selected studentdatas from action
+•	Press Go
+•	Click Yes, I’m Sure button.
+•	Similarly you can delete all or selected courses.
+•	IF a course is deleted, all the corresponding studentdata is also deleted.
+
+ 2.3. Homepage:
+After hitting the submit button you will be redirected to the homepage.
+The homepage has a list of courses which you can choose from.
+2.4 Navigation bar:
+From the state you logged in you will find a black Navigation bar for easy transition from page to page throughout your activity on the site.
+2.5. GMRVF in the extreme left of Navigation bar:
+ When you click on that you will be redirect to official skilling portal of GMRVF.
+2.6. Home:
+When you click on Home button, you will be redirected to homepage wherever you are in the site. Homepage is that which is opened just after logging in.
+2.7 Full Student Data on Homepage:
+You can see the data of all the students training in the centres all over India, in all the courses.
+2.8. Add student:
+When you click on Add student in the navigation bar you will be redirected to a page where you can enter the details of the student and after hitting Submit button, It will show alert message that response has been recorded then click OK. The details of the students which you entered be reflected in database also.
+
+2.9. Edit karma:
+When you click on Edit Karma you can see the list of courses. After choosing your course you can see the details of students in all centres and you can edit student’s Karma by clicking on the editing icon after which you will be redirected to a page where you can enter the points for all the activities under which student will be evaluated. Hit the submit button after you have filled all the points of corresponding activities and you will be shown an alert box that response has been recorded.
+
+2.10. Quick Links:
+A basic dropdown through which you can go to Admin Panel and User Manual for this website.
+
+2.11. Logout: You will be logged out of the website and must login again to change or access the site contents.
+
+2.12. Specific course detail:
+When you select a specific course on homepage then it will give all the details of student of that particular course of all the centres and by clicking on the column name you can sort the data inside the table. You will also have a search bar through which you can search for the data without going all through the form.
+
+
+
+
+</body>
+{% endblock %}
+</html>
